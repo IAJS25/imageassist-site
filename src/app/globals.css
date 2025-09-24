@@ -1,0 +1,9 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+:root { color-scheme: light; }     /* keep your light-only choice */
+
+html, body { height: 100%; }
+body {
+  /* your base body styles */
+}
