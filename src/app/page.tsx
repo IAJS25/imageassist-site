@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Script from "next/script";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import IntroVideo from "./components/IntroVideo";
 
 
 /** Simple reusable row (no hooks, server-safe) */
@@ -55,6 +56,7 @@ function FeatureRow({
   );
 }
 
+
 export default function Home() {
   return (
     <>
@@ -81,8 +83,9 @@ export default function Home() {
                 Get Started
               </a>
               <a
-                href="#features"
-                className="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 bg-white hover:bg-slate-50"
+                href="https://calendly.com/sadlowe-imageassist/imageassist-demo-clone?month=2025-09"
+                target="_blank"
+                rel="noopener noreferrer"                className="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 bg-white hover:bg-slate-50"
               >
                 Book a Demo
               </a>
@@ -92,7 +95,7 @@ export default function Home() {
           {/* Hero image */}
           <div className="rounded-2xl shadow-xl ring-1 ring-slate-200 overflow-hidden">
             <img
-              src="/ImageAssist-hero.png"
+              src="/ImageAssist App.png"
               alt="ImageAssist app screenshot"
               className="w-full h-auto object-cover"
             />
@@ -100,11 +103,13 @@ export default function Home() {
         </div>
       </section>
 
+      <IntroVideo />
+
       {/* Features – alternating rows */}
       <section id="features" className="bg-slate-50 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-extrabold text-slate-900" >
+            <h2 className="text-3xl font-extrabold text-slate-900" style={{ color: "#114b79" }}>
               Powerful Features for Clinical Photography
             </h2>
             <p className="text-lg text-slate-600 mt-3">
@@ -122,7 +127,7 @@ export default function Home() {
                 "Instant red-to-green alignment",
                 "Easy for any staff member",
               ]}
-              imageSrc="/smartguides-iphone.png"
+              imageSrc="SmartGuides.png"
               imageAlt="SmartGuides on iPhone"
             />
 
@@ -136,7 +141,7 @@ export default function Home() {
                 "Custom brand backgrounds",
                 "Polished results (no Photoshop)",
               ]}
-              imageSrc="/background-removal-iphone.png"
+              imageSrc="BG Removal.png"
               imageAlt="Background removal on iPhone"
             />
 
@@ -149,7 +154,7 @@ export default function Home() {
                 "Session history at a glance",
                 "Works across iPhone, iPad, web",
               ]}
-              imageSrc="/photo-management-iphone.png"
+              imageSrc="Patient Management.png"
               imageAlt="Patient photo management on iPhone"
             />
 
@@ -176,11 +181,11 @@ export default function Home() {
                 "Auto file naming on export",
                 "API & enterprise options",
               ]}
-              imageSrc="/emr-integration-iphone.png"
+              imageSrc="EMR Integrations.png"
               imageAlt="EMR integration on iPhone"
             />
 
-            {/* 6) HIPAA Compliance — image left, text right */}
+            {/* 6) Teams — image left, text right */}
             <FeatureRow
               reverse
               title="Built for Teams"
@@ -190,7 +195,7 @@ export default function Home() {
                 "No images on personal devices",
                 "Audit-friendly workflow",
               ]}
-              imageSrc="/hipaa-iphone.png"
+              imageSrc="Team.png"
               imageAlt="HIPAA-compliant storage on iPhone"
             />
           </div>
@@ -217,7 +222,9 @@ export default function Home() {
         Get Started
       </a>
       <a
-        href="#contact"
+        href="https://calendly.com/sadlowe-imageassist/imageassist-demo-clone?month=2025-09"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-semibold text-white border border-white hover:bg-white/10 transition"
       >
         Book a Demo
@@ -454,77 +461,99 @@ export default function Home() {
   </div>
 </section>
 
-      {/* Team */}
-<section id="team" className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
-  <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">Meet the ImageAssist Team</h2>
+      {/* Team – 4 across on desktop */}
+<section id="team" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+  <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">
+    Meet the ImageAssist Team
+  </h2>
 
-  <div className="grid gap-8 sm:grid-cols-2">
-    {/* Dr. Michael Golinko */}
-    <div className="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-      <img
-        src="/golinko.png"
-        alt="Dr. Michael Golinko"
-        className="mx-auto h-32 w-32 rounded-full object-cover ring-2"
-        style={{ ringColor: "#4fafd1" }}
-      />
-      <h3 className="mt-4 text-lg font-semibold text-slate-900">Dr. Michael Golinko</h3>
-      <p className="text-sm text-slate-500 mb-3">Co-Founder & CEO</p>
-      <p className="text-slate-700 text-sm mb-4">
-        Board-certified plastic & reconstructive surgeon and clinical innovator focused on
-        standardized imaging and better outcomes. Dr. Golinko leads product vision and clinical
-        validation for ImageAssist.
-      </p>
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:opacity-90 transition"
-        style={{ background: "#4fafd1" }}
-        aria-label="Dr. Michael Golinko on LinkedIn"
-      >
-        {/* LinkedIn SVG */}
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5V5c0-2.76-2.24-5-5-5zM8 19H5V9h3v10zM6.5 7.73C5.53 7.73 4.75 6.94 4.75 5.98c0-.97.78-1.76 
-            1.75-1.76S8.25 5 8.25 5.98c0 .97-.78 1.75-1.75 1.75zM20 19h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 
-            0-2.16 1.46-2.16 2.97V19h-3V9h2.88v1.37h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.62 2.01 3.62 4.63V19z"/>
-        </svg>
-      </a>
-    </div>
+  {/* Simple card component to keep things tidy */}
+  {(() => {
+    function TeamCard({
+      name,
+      role,
+      bio,
+      imgSrc,
+      linkedin,
+    }: {
+      name: string;
+      role: string;
+      bio: string;
+      imgSrc: string;
+      linkedin?: string;
+    }) {
+      return (
+        <div className="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
+          <img
+            src={imgSrc}
+            alt={name}
+            className="mx-auto h-32 w-32 rounded-full object-cover ring-2 ring-[#114a79]"
+          />
+          <h3 className="mt-4 text-lg font-semibold text-slate-900">{name}</h3>
+          <p className="text-sm text-slate-500 mb-3">{role}</p>
+          <p className="text-slate-700 text-sm mb-4">{bio}</p>
 
-    {/* Jonathan Sadlowe, MBA */}
-    <div className="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-      <img
-        src="/jonathan-sadlowe.png"
-        alt="Jonathan Sadlowe, MBA"
-        className="mx-auto h-32 w-32 rounded-full object-cover ring-2"
-        style={{ ringColor: "#4fafd1" }}
-      />
-      <h3 className="mt-4 text-lg font-semibold text-slate-900">Jonathan Sadlowe, MBA</h3>
-      <p className="text-sm text-slate-500 mb-3">Co-Founder & COO</p>
-      <p className="text-slate-700 text-sm mb-4">
-        Operator and marketer with experience across healthcare, venture, and SaaS. Jonathan leads
-        go-to-market, partnerships, and day-to-day operations for ImageAssist.
-      </p>
-      <a
-        href="https://www.linkedin.com/in/jonathansadlowe/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:opacity-90 transition"
-        style={{ background: "#4fafd1" }}
-        aria-label="Jonathan Sadlowe on LinkedIn"
-      >
-        {/* LinkedIn SVG */}
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5V5c0-2.76-2.24-5-5-5zM8 19H5V9h3v10zM6.5 7.73C5.53 7.73 4.75 6.94 4.75 5.98c0-.97.78-1.76 
-            1.75-1.76S8.25 5 8.25 5.98c0 .97-.78 1.75-1.75 1.75zM20 19h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 
-            0-2.16 1.46-2.16 2.97V19h-3V9h2.88v1.37h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.62 2.01 3.62 4.63V19z"/>
-        </svg>
-      </a>
-    </div>
-  </div>
+          {linkedin && (
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:opacity-90 transition"
+              style={{ background: "#114a79" }}
+              aria-label={`${name} on LinkedIn`}
+            >
+              {/* LinkedIn SVG */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V9h3v10zM6.5 7.73C5.53 7.73 4.75 6.94 4.75 5.98c0-.97.78-1.76 1.75-1.76S8.25 5 8.25 5.98c0 .97-.78 1.75-1.75 1.75zM20 19h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V19h-3V9h2.88v1.37h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.62 2.01 3.62 4.63V19z"/>
+              </svg>
+            </a>
+          )}
+        </div>
+      );
+    }
+
+    return (
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        {/* 1) Dr. Michael Golinko */}
+        <TeamCard
+          name="Dr. Michael Golinko"
+          role="Co-Founder & CEO"
+          imgSrc="golinko.webp"
+          linkedin="#"
+          bio="Board-certified plastic & reconstructive surgeon and clinical innovator focused on standardized imaging and better outcomes. Dr. Golinko leads product vision and clinical validation for ImageAssist."
+        />
+
+        {/* 2) Jonathan Sadlowe, MBA */}
+        <TeamCard
+          name="Jonathan Sadlowe, MBA"
+          role="Co-Founder & COO"
+          imgSrc="Sadlowe.webp"
+          linkedin="https://www.linkedin.com/in/jonathansadlowe/"
+          bio="Operator and marketer with experience across healthcare, venture, and SaaS. Jonathan leads go-to-market, partnerships, and day-to-day operations for ImageAssist."
+        />
+
+        {/* 3) Placeholder – duplicate Michael for now */}
+        <TeamCard
+          name="Dr. Michael Golinko"
+          role="Co-Founder & CEO"
+          imgSrc="Bennett.webp"
+          linkedin="#"
+          bio="Board-certified plastic & reconstructive surgeon and clinical innovator focused on standardized imaging and better outcomes. Dr. Golinko leads product vision and clinical validation for ImageAssist."
+        />
+
+        {/* 4) Placeholder – duplicate Jonathan for now */}
+        <TeamCard
+          name="Jonathan Sadlowe, MBA"
+          role="Co-Founder & COO"
+          imgSrc="rafa.webp"
+          linkedin="https://www.linkedin.com/in/jonathansadlowe/"
+          bio="Operator and marketer with experience across healthcare, venture, and SaaS. Jonathan leads go-to-market, partnerships, and day-to-day operations for ImageAssist."
+        />
+      </div>
+    );
+  })()}
 </section>
+
 
 {/* Contact / Book a Demo */}
 <section id="contact" className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-20">
@@ -536,21 +565,25 @@ export default function Home() {
   </p>
 
   <div className="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
-    {/* Inline Typeform widget — give it an explicit height */}
-    <div
-      data-tf-widget="Y01K5HHCVCFVC10D4P7EN79R75W"
-      data-tf-medium="snippet"
-      style={{ width: "100%", height: "640px" }}
-    ></div>
-  </div>
+    {/* Direct iframe embed keeps it inside the card */}
+    <iframe
+  src="https://form.typeform.com/to/duVWIufA"
+  title="ImageAssist Contact Form"
+  style={{ width: "100%", height: "640px", border: 0 }}
+  loading="lazy"  // 👈 prevents eager load/focus on first paint
+  referrerPolicy="no-referrer-when-downgrade"
+  sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+/>
 
-  {/* Load the embed script once (https preferred) */}
-  <Script src="https://embed.typeform.com/next/embed.js" strategy="lazyOnload" />
+  </div>
 
   <p className="mt-6 text-center text-sm text-slate-500">
     We respect your privacy. Patient photos stay HIPAA-compliant and never on personal devices.
   </p>
 </section>
+
+
+
 <Footer />
     </>
   );

@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Link href="/" aria-label="ImageAssist Home" className="flex items-center gap-3 mb-4">
               <img
-                src="/ImageAssist-logo-a.png"
+                src="/ImageAssist Logo White.png"
                 alt="ImageAssist Logo"
                 className="h-9 w-auto"
               />
@@ -27,8 +27,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/features" className="hover:underline">Features</Link></li>
-              <li><Link href="/specialties/plastic-surgery" className="hover:underline">Specialties</Link></li>
-              <li><Link href="/pricing" className="hover:underline">Pricing</Link></li>
+              <li><Link href="/specialties/plastic-surgery" className="hover:underline">Pricing</Link></li>
+              <li><Link href="/pricing" className="hover:underline">Blog</Link></li>
               <li><Link href="/faqs" className="hover:underline">FAQs</Link></li>
             </ul>
           </div>
@@ -39,8 +39,8 @@ export default function Footer() {
               Company
             </h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/team" className="hover:underline">Team</Link></li>
-              <li><Link href="/blog" className="hover:underline">Blog</Link></li>
+              <li><Link href="/team" className="hover:underline">Terms of Service</Link></li>
+              <li><Link href="/blog" className="hover:underline">Privacy Policy</Link></li>
               <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               <li><a href="mailto:hello@imageassist.com" className="hover:underline">Support</a></li>
             </ul>

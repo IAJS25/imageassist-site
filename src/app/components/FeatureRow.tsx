@@ -23,7 +23,7 @@ export default function FeatureRow({
     >
       {/* Text */}
       <div>
-        <h3 className="text-2xl font-bold text-slate-900 mb-3">{title}</h3>
+        <h3 className="text-2xl font-extrabold text-slate-900 mb-3" style={{ color: "114a79"}}>{title}</h3>
         <p className="text-slate-600 mb-4">{description}</p>
         {bullets.length > 0 && (
           <ul className="space-y-2 text-slate-700">
