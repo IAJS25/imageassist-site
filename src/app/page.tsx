@@ -181,7 +181,7 @@ export default function Home() {
                 "Auto file naming on export",
                 "API & enterprise options",
               ]}
-              imageSrc="EMR Integrations.png"
+              imageSrc="EMR.png"
               imageAlt="EMR integration on iPhone"
             />
 
@@ -189,11 +189,11 @@ export default function Home() {
             <FeatureRow
               reverse
               title="Built for Teams"
-              description="Protect patient privacy with secure, HIPAA-compliant cloud storage. Photos never live on personal camera rolls."
+              description="Enable your entire staff to collaborate with ease. ImageAssist scales from small practices to enterprise hospitals, letting you add users, manage access, and ensure everyone works from the same secure photo library."
               bullets={[
-                "HIPAA-compliant cloud",
-                "No images on personal devices",
-                "Audit-friendly workflow",
+                "Scalable team management",
+                "Shared, centralized photo access",
+                "Administrative visibility & controls",
               ]}
               imageSrc="Team.png"
               imageAlt="HIPAA-compliant storage on iPhone"
