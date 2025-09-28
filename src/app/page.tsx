@@ -70,7 +70,7 @@ export default function Home() {
               The New Standard in Clinical Photography
             </h1>
             <p className="mt-5 text-lg text-slate-700 max-w-xl">
-              Consistent, HIPAA-compliant before-and-after photos with SmartGuides, background removal, and EMR integrations.
+              Capture, manage, and secure high-quality patient photos with ease. ImageAssist delivers consistent, HIPAA-compliant before-and-after photos with SmartGuides, background removal, and EMR integrations—your app for galleries, podium talks, research & clinical documentation.
             </p>
             <div className="mt-6 flex gap-4">
               <a
@@ -110,10 +110,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-extrabold text-slate-900" style={{ color: "#114b79" }}>
-              Powerful Features for Clinical Photography
+              Enterprise-ready clinical photography, made simple
             </h2>
             <p className="text-lg text-slate-600 mt-3">
-              ImageAssist helps your team capture consistent, professional photos—securely and at scale.
+              From solo provider or a large health system, ImageAssist delivers secure, HIPAA-compliant photo management that scales with your needs.
             </p>
           </div>
 
@@ -121,11 +121,11 @@ export default function Home() {
             {/* 1) SmartGuides — text left, image right */}
             <FeatureRow
               title="SmartGuides"
-              description="ASPS guideline–aligned overlays and instant alignment feedback help anyone capture flawless before-and-after photos."
+              description="Capture flawless before-and-after photos with American Society of Plastic Surgery–aligned overlays and alignment feedback—enabling staff to select the right guides, speed photo capture, and achieve publication-quality results."
               bullets={[
-                "50+ face & body SmartGuides",
-                "Instant red-to-green alignment",
-                "Easy for any staff member",
+                "50+ face & body SmartGuides to match every procedure",
+                "Real-time red-to-green alignment for precision",
+                "Fast and simple for any staff member to capture consistent results",
               ]}
               imageSrc="SmartGuides.png"
               imageAlt="SmartGuides on iPhone"
@@ -135,11 +135,11 @@ export default function Home() {
             <FeatureRow
               reverse
               title="Background Removal"
-              description="Automatically isolate the subject and set a clean, on-brand background so every image looks professional."
+              description="Automatically remove distractions and highlight what matters most: the patient. ImageAssist produces clear, professional photos every time, with customizable background colors to match your brand or personal preference."
               bullets={[
                 "Automatic subject isolation",
-                "Custom brand backgrounds",
-                "Polished results (no Photoshop)",
+                "Distraction-free, professional results",
+                "Customizable brand background colors",
               ]}
               imageSrc="BG Removal.png"
               imageAlt="Background removal on iPhone"
@@ -148,7 +148,7 @@ export default function Home() {
             {/* 3) Patient Photo Management — text left, image right */}
             <FeatureRow
               title="Patient Photo Management"
-              description="Find photos instantly and keep everything organized by patient, date, or procedure—on mobile and web."
+              description="Keep every image organized and accessible across devices. Search by patient, date, or procedure and view full session histories instantly."
               bullets={[
                 "Search by name, date, procedure",
                 "Session history at a glance",
@@ -162,24 +162,24 @@ export default function Home() {
             <FeatureRow
               reverse
               title="HIPAA Compliance"
-              description="Protect patient privacy with secure, HIPAA-compliant cloud storage. Photos never live on personal camera rolls."
+              description="Safeguard patient privacy while reducing legal and compliance risk. ImageAssist ensures all photos are stored in encrypted, HIPAA-compliant cloud storage, never on personal devices—keeping your practice audit-ready and protected."
               bullets={[
-                "HIPAA-compliant cloud",
-                "No images on personal devices",
-                "Audit-friendly workflow",
+                "Encrypted HIPAA-compliant cloud",
+                "No images stored on personal devices",
+                "Audit-ready documentation & risk management",
               ]}
-              imageSrc="/hipaa-iphone.png"
+              imageSrc="HIPAA.png"
               imageAlt="HIPAA-compliant storage on iPhone"
             />
 
             {/* 5) EMR Integrations — text left, image right */}
             <FeatureRow
               title="EMR Integrations"
-              description="Connect ImageAssist to systems like 4D EMR for seamless photo documentation and export."
+              description="Connect ImageAssist directly with leading EMR systems like 4D EMR, Epic, and Apollo to streamline documentation, speed up workflows, and minimize errors. With automatic file naming and enterprise-ready APIs, your practice saves time and stays organized."
               bullets={[
-                "4D EMR integration",
+                "4D EMR, EPIC & Apollo integrations",
                 "Auto file naming on export",
-                "API & enterprise options",
+                "API & enterprise-ready options",
               ]}
               imageSrc="EMR.png"
               imageAlt="EMR integration on iPhone"
@@ -196,7 +196,20 @@ export default function Home() {
                 "Administrative visibility & controls",
               ]}
               imageSrc="Team.png"
-              imageAlt="HIPAA-compliant storage on iPhone"
+              imageAlt="ImageAssist for Teams"
+            />
+
+            {/* 7) Web Portal & Viewer — image left, text right */}
+            <FeatureRow
+              title="Web Portal & Viewer"
+              description="Access ImageAssist anytime on the web. Review, organize, and share patient photos securely from any browser. Manage your account, control user access, and keep your entire photo library professional and consistent across devices."
+              bullets={[
+                "Secure browser-based photo access",
+                "Account & team management tools",
+                "Easy before-and-after photo gallery viewer",
+              ]}
+              imageSrc="Web Portal Viewer.png"
+              imageAlt="Web Portal and Gallery Viewer"
             />
           </div>
         </div>
@@ -209,8 +222,7 @@ export default function Home() {
       See how easy patient photos can be
     </h2>
     <p className="text-lg text-slate-100 mb-8">
-      Try ImageAssist free for 14 days. Then $40/month. No long-term commitment.
-      Cancel anytime. It only takes 30 seconds to sign up!
+      Try ImageAssist free for 14 days. No long-term commitment. No hassle. It takes less than a minute to sign up!
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
       <a

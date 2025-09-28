@@ -9,10 +9,10 @@ export default function IntroVideo() {
         className="text-3xl font-extrabold text-slate-900 mb-6 text-center"
         style={{ color: "#114b79" }}
       >
-        ImageAssist Overview Video
+        See ImageAssist in Action
       </h2>
       <p className="mt-5 text-lg text-slate-700 text-center">
-        Consistent, HIPAA-compliant clinical photography made simple
+        Created by healthcare professionals at Vanderbilt University Medical Center, ImageAssist makes capturing, managing, and storing clinical photos simple, secure, and consistent.
       </p>
       <br />
 
